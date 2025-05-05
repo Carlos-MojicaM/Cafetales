@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: cafetal-backend
+    env: node
+    repo: https://github.com/Carlos-MojicaM/cafetal.git
+    branch: main
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm run dev
+    envVars:
+      - key: MONGO_URI
+        value: "mongodb+srv://carlosmojicam:Cafetal2025@cafetalbd.qbzfojm.mongodb.net/?retryWrites=true&w=majority&appName=Cafetalbd"
+      - key: JWT_SECRET
+        value: "supersecreto-cafetal"
+      - key: INFURA_ID
+        value: "https://mainnet.infura.io/v3/6c1e29ff7c4b41f9b48fc778d37e98dc"
