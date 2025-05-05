@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "cafetal_proyect/backend",
   "version": "1.0.0",
   "description": "Backend de Cafetal App",
   "main": "server.js",
